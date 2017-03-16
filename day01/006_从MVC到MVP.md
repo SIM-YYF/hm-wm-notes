@@ -25,12 +25,12 @@
 	
 #### 模型图:
 
-![](/img/mvc模型图.png)
+![](/day01/img/mvc模型图.png)
 
 
 #### 流程图:
 
-![](/img/mvc流程图.png)
+![](/day01/img/mvc流程图.png)
 
 ####　缺陷
 
@@ -56,12 +56,12 @@ Presenter（主持者）
 
 #### 模型图
 
-![](/img/mvp基础框架模型图.png)
+![](/day01/img/mvp基础框架模型图.png)
 
 
 #### 流程图
 
-![](/img/mvp基础框架图.png)
+![](/day01/img/mvp基础框架图.png)
 
 #### 优点
 
@@ -88,7 +88,7 @@ Presenter（主持者）
 为了表达方便，现在统一一下说法，后面我说MVC里面分层中，Model 层就简称 M，View 层简称 V，Controller 层就简称 C，同理 MVP 里面，Presenter 层简称 P，android 中的 View 类还是用 View 来表述
 
 
-[MVC 模式](/006.01_MVC模式.md )
+[MVC 模式](/day01/006.01_MVC模式.md )
 
 Android 的 MVC 模式中
 
@@ -119,7 +119,7 @@ MVC里面所有的代码按照程序执行的流程可以分为，View、View控
 
 ### 2. 使用 MVP 架构实现用户登陆
 
-[MVP模式](/006.02_MVP模式.md )
+[MVP模式](/day01/006.02_MVP模式.md )
 
 搞懂 MVC 之后再理解 MVP 也就容易，和 MVC 比较，MVP 就是把界面控制逻辑和业务逻辑拆分开了，界面控制逻辑还是在 Activity 和 Fragment 中，只不过它们现在属于 V 层了；而业务控制逻辑属于 P 层，P 不直接控制 view，只需要完成业务在需要界面的时候，通知一下 V 层刷新界面就行；M 层还是原来的纯粹的数据模型。
 
@@ -168,7 +168,7 @@ P：业务逻辑
 
    http://dev.qq.com/topic/5799d7844bef22a823b3ad44
    
-- [业务逻辑相关概念](/006.03_业务逻辑相关概念.md)
+- [业务逻辑相关概念](/day01/006.03_业务逻辑相关概念.md)
 
 
 - [google官方MVP架构例子](https://github.com/googlesamples/android-architecture)
