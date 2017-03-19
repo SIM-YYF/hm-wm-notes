@@ -217,6 +217,59 @@ create() 方法是 RxJava 最基本的创造事件序列的方法。
 
 #### Rxjava的使用案例
 
+- 打印简单字符串
+
+
+```java
+String[] names ={"a", "b"};
+Observable.from(names) .subscribe(new Action1<String>() {
+            @Override
+            public void call(String name) {
+                Log.d(tag, name);
+            }
+        });
+
+
+```
+
+
+
+
+- 由 id 取得图片并显示
+
+
+
+```java
+final  int drawableRes = R.mipmap.ic_launcher;
+final ImageView imageView = new ImageView(this);
+Observable.create(new Observable.OnSubscribe<Drawable>() {
+    @Override
+    public void call(Subscriber<? super Drawable> subscriber) {
+        Drawable drawable = MainActivity.this.getResources().getDrawable(drawableRes);
+        subscriber.onNext(drawable);
+        subscriber.onCompleted();
+    }
+}).subscribe(new Observer<Drawable>() {
+    @Override
+    public void onNext(Drawable drawable) {
+        imageView.setImageDrawable(drawable);
+    }
+
+    @Override
+    public void onCompleted() {
+    }
+
+    @Override
+    public void onError(Throwable e) {
+        Toast.makeText(activity, "Error!", Toast.LENGTH_SHORT).show();
+    }
+});
+
+```
+
+
+
+
 
 
 
