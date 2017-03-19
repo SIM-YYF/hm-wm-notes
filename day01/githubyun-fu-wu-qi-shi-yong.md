@@ -64,9 +64,9 @@
                 
         * 开发设置
         
-                OAuth application
-                integrations
-                Personal access tokens
+                OAuth application: 管理需要认证的项目
+                integrations : 
+                Personal access tokens:配置个人认证信息
         
         
         
