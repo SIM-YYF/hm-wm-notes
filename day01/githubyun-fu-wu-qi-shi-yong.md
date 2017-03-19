@@ -65,8 +65,8 @@
         * 开发设置
         
                 OAuth application: 管理需要认证的项目
-                integrations : 
-                Personal access tokens:配置个人认证信息
+                integrations : 集成和扩展项目
+                Personal access tokens:配置个人认证信息．比如：　访问你的账户时，需要对方提供tokens
         
         
         
