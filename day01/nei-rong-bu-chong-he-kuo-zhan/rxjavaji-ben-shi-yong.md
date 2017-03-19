@@ -268,6 +268,10 @@ Observable.create(new Observable.OnSubscribe<Drawable>() {
 ```
 
 
+#### Rxjava线程控制
+
+
+
 
 
 
