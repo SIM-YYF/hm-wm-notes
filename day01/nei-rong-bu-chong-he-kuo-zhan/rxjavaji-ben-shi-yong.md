@@ -80,9 +80,18 @@ OnClickListener 的模式大致如下图：
      
      
 
-###### Observable /Observer /subscribe三者之间的关系
+#### Rxjava中 Observable /Observer /subscribe三者之间的关系
 
 Observable 和 Observer 通过 subscribe() 方法实现订阅关系，从而 Observable 可以在需要的时候发出事件来通知 Observer。
+
+
+#### rxjava观察者模式原理图
+
+
+
+
+
+
 
 
 
