@@ -118,4 +118,14 @@
         
 ### 克隆仓库
 
+- 进入仓库页面,点击右上角绿色的按钮 clone or down
+
+![](/assets/cloneordown仓库.png)
+
+- clone仓库
+        
+        * 复制仓库地址
+        * 打开git命令行控制台,输入命令进行clone
+        
+        
 
