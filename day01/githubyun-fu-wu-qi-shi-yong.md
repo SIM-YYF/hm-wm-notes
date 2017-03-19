@@ -49,8 +49,23 @@
 
 在个人设置中心页面有以下菜单选项:
 
+        
+        * 个人设置
 
-        1. 
+                Account: 账户管理:修改密码
+                Emails: 邮件管理: 设置邮件
+                Notifications : 消息通知管理
+                Billing : 收费浏览
+                SSH android GPG keys:
+                Security
+                Blocked users
+                Repositiories
+                
+        * 开发设置
+        
+                OAuth application
+                integrations
+                Personal access tokens
         
         
         
