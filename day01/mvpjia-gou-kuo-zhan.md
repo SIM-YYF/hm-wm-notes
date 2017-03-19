@@ -6,7 +6,10 @@
 
 [google-MVP架构案例](https://github.com/googlesamples/android-architecture/tree/todo-mvp/)
 
-代码实现:
+案例结构:
+
+
+
 
 
 ## MVP框架的设计和实现
