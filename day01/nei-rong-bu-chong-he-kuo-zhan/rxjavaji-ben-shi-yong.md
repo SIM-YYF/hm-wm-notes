@@ -357,6 +357,7 @@ Observable.create(new Observable.OnSubscribe<Drawable>() {
 
 ```
 
+#### Rxjava提供了事件队列变换机制
 
 
 
