@@ -294,10 +294,7 @@ RxJava 已经内置了几个 Scheduler ，它们已经适合大多数的使用�
 
 - 线程控制案例说明
 
-在子线程中1,2,3,4
-
-
-
+比如以下代码:
 
 ```java
 
@@ -312,8 +309,12 @@ Observable.just(1, 2, 3, 4)
         });
 
 ```
+解析说明:
 
+上面这段代码中，由于 subscribeOn(Schedulers.io()) 的指定，被创建的事件的内容 1、2、3、4 将会在 IO 线程发出；
 
+而由于 observeOn(AndroidScheculers.mainThread()) 的指定，因此 subscriber 数字的打印将发生在主线程 。
+ 
 
 
 
