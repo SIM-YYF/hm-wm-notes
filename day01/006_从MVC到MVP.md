@@ -170,14 +170,11 @@ P：业务逻辑
    
 - [业务逻辑相关概念](/day01/006.03_业务逻辑相关概念.md)
 
-
-- [google官方MVP架构例子](https://github.com/googlesamples/android-architecture)
-
    https://github.com/googlesamples/android-architecture
 
 
 ## 内容扩展
 
 ### 参看google官方MVP架构的例子
-
+[MVP架构的扩展](/day01/mvpjia-gou-kuo-zhan.md)
 
