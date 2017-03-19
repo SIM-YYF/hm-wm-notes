@@ -161,7 +161,7 @@ P：业务逻辑
 ```
 
 
-## 拓展和参考资料
+## 参考资料
 
 
 - [一步一步实现Android的MVP框架](http://dev.qq.com/topic/5799d7844bef22a823b3ad44)
@@ -175,5 +175,9 @@ P：业务逻辑
 
    https://github.com/googlesamples/android-architecture
 
+
+## 内容扩展
+
+### 参看google官方MVP架构的例子
 
 
