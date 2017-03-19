@@ -30,9 +30,21 @@
 
 - 点击右上角的个人图片菜单.打开菜单选项
 
+![](/assets/个人中心菜单.png)
 
+- 菜单选项说明:
 
-
+        * your profile 
+        * your start
+        * Explore
+        * integration：　团队协作开发集成选项
+        * settings　：　个人设置选项
+        * sign out :　退出登录选项
+        
+        
+        
+        
+        
 ### 创建仓库
 
 ### 编辑仓库
