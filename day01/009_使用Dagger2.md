@@ -128,7 +128,7 @@ public interface MainActivityComponent {
 2. DaggerMainActivityComponent.builder() 后调用 mainActivityPresenterModule 方法是给 Builder 类设置 Module 对象，由于我们的 Module 类的构造方法带有参数，所以需要我们自己 new Module 对象，否则 Module 对象是可以自动产生
 
 
-## 拓展和参考资料
+## 参考资料
 - [Dagger2 使用详解](http://www.jianshu.com/p/94d47da32656)
 
     http://www.jianshu.com/p/94d47da32656
