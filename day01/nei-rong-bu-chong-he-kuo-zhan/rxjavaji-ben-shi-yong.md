@@ -65,9 +65,9 @@ RxJava 有四个基本概念：
 - subscribe (订阅)事件
 - 事件
 
-      onNext()
-      onCompleted():
-      onError(): 
+      onNext(): 普通事件,相当于onClick() / onEvent()
+      onCompleted():队列完结事件
+      onError(): 队列异常事件
 
 
 Observable 和 Observer 通过 subscribe() 方法实现订阅关系，从而 Observable 可以在需要的时候发出事件来通知 Observer。
