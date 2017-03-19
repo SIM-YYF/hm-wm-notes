@@ -270,6 +270,24 @@ Observable.create(new Observable.OnSubscribe<Drawable>() {
 
 #### Rxjava线程控制
 
+- Scheduler 的 API 
+
+在RxJava 中，Scheduler ——调度器，相当于线程控制器，RxJava 通过它来指定每一段代码应该运行在什么样的线程。
+RxJava 已经内置了几个 Scheduler ，它们已经适合大多数的使用场景
+
+        Schedulers.immediate(): 直接在当前线程运行，相当于不指定线程。这是默认的 Scheduler。
+        Schedulers.newThread(): 总是启用新线程，并在新线程执行操作。
+        Schedulers.io(): I/O 操作（读写文件、读写数据库、网络信息交互等）所使用的 Scheduler。行为模式和 newThread() 差不多，区别在于 io() 的内部实现是是用一个无数量上限的线程池，可以重用空闲的线程，因此多数情况下 io() 比 newThread() 更有效率。
+        另外， Android 还有一个专用的 AndroidSchedulers.mainThread()，它指定的操作将在 Android 主线程运行
+
+线程控制
+
+有了这几个 Scheduler ，就可以使用 subscribeOn() 和 observeOn() 两个方法来对线程进行控制了。 
+
+* subscribeOn(): 指定 subscribe() 所发生的线程，即 Observable.OnSubscribe 被激活时所处的线程。或者叫做事件产生的线程。 
+
+
+* observeOn(): 指定 Subscriber 所运行在的线程。或者叫做事件消费的线程。
 
 
 
