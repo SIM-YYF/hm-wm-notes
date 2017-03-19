@@ -41,6 +41,9 @@ A 对象（观察者）对 B 对象（被观察者）的某种变化高度敏感
 
 OnClickListener 的模式大致如下图：
 
+![](/assets/rxjava-01.png)
+
+
 
 
 
