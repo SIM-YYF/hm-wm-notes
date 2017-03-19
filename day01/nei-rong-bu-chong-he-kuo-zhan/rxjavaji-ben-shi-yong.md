@@ -99,6 +99,24 @@ Observable 和 Observer 通过 subscribe() 方法实现订阅关系，从而 Obs
 Observer 即观察者，它决定事件触发的时候将有怎样的行为。 
 RxJava 中的 Observer 接口的实现方式：
  
+```java
+
+ Observer<String> observer = new Observer<String>() {
+            @Override
+            public void onNext(String s) {
+                Log.i(tag, "Item: " + s);
+            }
+            @Override
+            public void onCompleted() {
+                Log.i(tag, "Completed!");
+            }
+            @Override
+            public void onError(Throwable e) {
+                Log.i(tag, "Error!");
+            }
+        };
+```
+
 
 
 除了 Observer 接口之外，RxJava 还内置了一个实现了 Observer 的抽象类：Subscriber。 
