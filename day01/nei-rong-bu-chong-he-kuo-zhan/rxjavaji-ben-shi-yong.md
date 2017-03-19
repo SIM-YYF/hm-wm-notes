@@ -369,19 +369,28 @@ RxJava 提供了对事件序列进行变换的支持，这是它的核心功能�
 
 
 ```java
-Observable.just("images/logo.png") // 输入类型 String
-        .map(new Func1<String, Bitmap>() {
-            @Override
-            public Bitmap call(String filePath) { // 参数类型 String
-                return getBitmapFromPath(filePath); // 返回类型 Bitmap
-            }
-        })
-        .subscribe(new Action1<Bitmap>() {
-            @Override
-            public void call(Bitmap bitmap) { // 参数类型 Bitmap
-                showBitmap(bitmap);
-            }
-        });
+ Observable
+                // 传入要展示的图片的ID
+                .just(R.mipmap.ic_launcher)
+                // 指定下一个方法将在IO线程执行
+                .subscribeOn(Schedulers.io())
+                // 加载图片，由于是耗时的，所以应该运行在子线程
+                .map(new Func1<Integer, Drawable>() {
+                    @Override
+                    public Drawable call(Integer integer) {
+                        Log.e(tag, "=====map thread======= " + Thread.currentThread().getName());
+                        return getResources().getDrawable(integer);
+                    }
+                })
+                // 指定订阅者将在主线程接收事件
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<Drawable>() {
+                    @Override
+                    public void call(Drawable drawable) {
+                        Log.e(tag, "=====subscribe thread======= " + Thread.currentThread().getName());
+                        imageview.setImageDrawable(drawable);
+                    }
+                });
 
 
 ```
