@@ -46,7 +46,6 @@ OnClickListener 的模式大致如下图：
 如图所示:
 
 通过 setOnClickListener() 方法，Button 持有 OnClickListener 的引用（这一过程没有在图上画出）
-
 当用户点击时，Button 自动调用 OnClickListener 的 onClick() 方法。
 
 另外，如果把这张图中的概念抽象出来:
