@@ -56,10 +56,10 @@
                 Emails: 邮件管理: 设置邮件
                 Notifications : 消息通知管理
                 Billing : 收费浏览
-                SSH android GPG keys:
-                Security
-                Blocked users
-                Repositiories
+                SSH android GPG keys:通过ssh和gpg方式访问账号
+                Security: 账号安全管理中心: 比如:账户登录情况
+                Blocked users:禁止用户访问你存储仓库的设置
+                Repositiories: 浏览个人创建的仓库
                 
         * 开发设置
         
