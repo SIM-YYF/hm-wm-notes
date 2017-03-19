@@ -294,6 +294,8 @@ RxJava 已经内置了几个 Scheduler ，它们已经适合大多数的使用�
 
 - 线程控制案例说明
 
+**打印数字**
+
 比如以下代码:
 
 ```java
@@ -316,6 +318,44 @@ Observable.just(1, 2, 3, 4)
 而由于 observeOn(AndroidScheculers.mainThread()) 的指定，因此 subscriber 数字的打印将发生在主线程 。
  
 
+
+**加载图片**
+
+在子线程中解析图片,在主线程中显示图片
+
+代码如下:
+
+
+
+```java
+Observable.create(new Observable.OnSubscribe<Drawable>() {
+    @Override
+    public void call(Subscriber<? super Drawable> subscriber) {
+        Drawable drawable = MainActivity.this.getResources().getDrawable(drawableRes);
+        subscriber.onNext(drawable);
+        subscriber.onCompleted();
+    }
+})
+        .subscribeOn(Schedulers.io()) // 指定 subscribe() 发生在 IO 线程
+        .observeOn(AndroidSchedulers.mainThread()) // 指定 Subscriber 的回调发生在主线程
+        .subscribe(new Observer<Drawable>() {
+            @Override
+            public void onNext(Drawable drawable) {
+                imageView.setImageDrawable(drawable);
+            }
+
+            @Override
+            public void onCompleted() {
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                Toast.makeText(activity, "Error!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+```
 
 
 
