@@ -36,7 +36,7 @@
 
         * your profile 
         * your start
-        * Explore
+        * Explore：　项目搜索选项
         * integration：　团队协作开发集成选项
         * settings　：　个人设置选项
         * sign out :　退出登录选项
