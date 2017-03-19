@@ -292,7 +292,26 @@ RxJava 已经内置了几个 Scheduler ，它们已经适合大多数的使用�
      observeOn(): 
      指定 Subscriber 所运行在的线程。或者叫做事件消费的线程。
 
+- 线程控制案例说明
 
+在子线程中1,2,3,4
+
+
+
+
+```java
+
+Observable.just(1, 2, 3, 4)
+        .subscribeOn(Schedulers.io()) // 指定 subscribe() 发生在 IO 线程
+        .observeOn(AndroidSchedulers.mainThread()) // 指定 Subscriber 的回调发生在主线程
+        .subscribe(new Action1<Integer>() {
+            @Override
+            public void call(Integer number) {
+                Log.d(tag, "number:" + number);
+            }
+        });
+
+```
 
 
 
