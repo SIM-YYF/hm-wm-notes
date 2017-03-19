@@ -60,6 +60,7 @@
                 Security: 账号安全管理中心: 比如:账户登录情况
                 Blocked users:禁止用户访问你存储仓库的设置
                 Repositiories: 浏览个人创建的仓库
+                Installed integrations: 集成或安装增强的工具库
                 
         * 开发设置
         
