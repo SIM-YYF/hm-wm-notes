@@ -144,7 +144,7 @@ Subscriber<String>  subscriber = new Subscriber<String>() {
 
 
  
-通过两种实现方式，实质上，在 RxJava 的 subscribe 过程中，Observer 也总是会先被转换成一个 Subscriber 再使用。
+通过两种实现方式，实质上，在 RxJava 的 subscribe 过程中，**Observer 也总是会先被转换成一个 Subscriber 再使用**。
 所以如果你只想使用基本功能，选择 Observer 和 Subscriber 是完全一样的
 
 
