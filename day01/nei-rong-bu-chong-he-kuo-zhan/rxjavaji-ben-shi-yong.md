@@ -67,6 +67,9 @@ RxJava 有四个基本概念：
 
       onNext(): 普通事件,相当于onClick() / onEvent()
       onCompleted():队列完结事件
+        RxJava 不仅把每个事件单独处理，还会把它们看做一个队列。
+        RxJava 规定，当不会再有新的 onNext() 发出时，需要触发 onCompleted() 方法作为标志。
+       
       onError(): 队列异常事件
 
 
