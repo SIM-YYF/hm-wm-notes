@@ -34,13 +34,12 @@
 
 - 菜单选项说明:
 
-        * your profile 
-        * your start
+        * your profile ：　你创建的项目
+        * your start　：你的项目点赞选项
         * Explore：　项目搜索选项
         * integration：　团队协作开发集成选项
         * settings　：　个人设置选项
         * sign out :　退出登录选项
-        
         
         
         
