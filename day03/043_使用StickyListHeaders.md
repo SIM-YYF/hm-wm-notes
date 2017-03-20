@@ -4,7 +4,9 @@
 
 
 ## 引言和回顾
+
 上一节我们把tablayout 和 viewpager 进行了绑定,并且把对应的fragment显示出来了. 接下来,我们实现商品内容的显示
+
 ## 课堂内容
 ### 1. 添加 StickyListHeaders 依赖
 在 module 的 build.gradle 文件中添加依赖
