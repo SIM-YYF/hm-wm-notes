@@ -72,13 +72,8 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-## 重点难点讲解
 
-## 问题和练习
-### 问题
+## 问题
 1. fragment 切换的本质是什么?
     是 View 树的结构的变化，一些 View 从 View 树上移除掉，一些 View 被添加到 View 树上
 
-### 练习
-
-## 拓展和参考资料
