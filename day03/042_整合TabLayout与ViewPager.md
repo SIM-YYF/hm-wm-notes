@@ -91,13 +91,4 @@ private class MyAdapter extends FragmentPagerAdapter {
 - FragmentPagerAdapter 和 FragmentStatePagerAdapter 的区别是，FragmentPagerAdapter 会缓存 Fragment 对象，FragmentStatePagerAdapter 只会缓存 Fragment 的状态；FragmentPagerAdapter 更加适合 fragment 数量比较少，页面切换要求响应速度更快的情况；
 - 定义3个Fragment类。
 
-## 重点难点讲解
-
-## 问题和练习
-
-### 问题
-
-### 练习
-
-## 拓展和参考资料
 
