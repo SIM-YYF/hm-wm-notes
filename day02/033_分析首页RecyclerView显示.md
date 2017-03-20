@@ -43,7 +43,6 @@ RecyclerView 中的数据
 - position为其他值，type 为 0 是第二种 item
 - position为其他值，type 为 1 是第三种 item
 
-## 重点难点讲解
 
 ## 问题
 getItemViewType 方法返回值如何取值？
