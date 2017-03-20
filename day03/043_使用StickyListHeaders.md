@@ -147,12 +147,3 @@ public class MyGroupAdapter extends BaseAdapter implements StickyListHeadersAdap
 - `getHeaderId()`，返回每个 position 的条目所属的分类的 id，根据前后两个条目的所属分类 id 是否一样，来决定是否显示头view，getHeaderId 返回值决定了哪些位置显示头 view；
 - `getHeaderView()` 返回每个 position 对应的 headView，每个 position 都有 headview，而且 headview 和普通的 item view合并在一起形成一个新的 item，我们之所以只能看到一个分类item，是根据 `getHeaderId()` 方法的返回值，决定哪些 item 的 headView 会 gone 掉。
 
-## 重点难点讲解
-
-## 问题和练习
-
-### 问题
-
-### 练习
-
-## 拓展和参考资料
