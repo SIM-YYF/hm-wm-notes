@@ -14,9 +14,9 @@
 使用dagger2实例对象,需要用到四个注解:
 
 @inject: 声明需要依赖注入的对象. 
-@module: 提供依赖对象的容器
-@provider: 声明提供实例对象
-@component: 将moudle中提供的实例对象复制给使用@inject声明的对象.
+@module: 提供依赖对象的容器. 指定创建对象的类上
+@provider: 声明提供实例对象. 指定创建对象的方法上
+@component: 将moudle中提供的实例对象复制给使用@inject声明的对象.将需要注入的对象和创建好的对象联系在一起.
 
 
 ## 课堂内容
