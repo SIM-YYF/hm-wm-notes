@@ -2,7 +2,6 @@
 ## 学习目标
 - 按需求设置 SellerDetailActivity 的 Toolbar
 
-## 学习基础要求
 
 ## 引言和回顾
 
