@@ -4,6 +4,16 @@
 
 
 ## 引言和回顾
+按照上面分析的内容:
+
+1. 处理标题（ToolBar）
+2. 处理TabLayout，展示"商品","评价","商家"
+3. ViewPager处理及绑定TabLayout
+4. 商品tab下的商品列表展示
+5. 商品tab下的购物车
+6. 商品tab下的选择商品
+
+首先处理一下toolbar.
 
 ## 课堂内容
 ### 1. 设置 SellerDetailActivity 样式
