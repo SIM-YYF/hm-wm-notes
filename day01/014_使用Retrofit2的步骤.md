@@ -2,8 +2,18 @@
 ## 学习目标
 - 熟练使用 Retrofit2 进行发送 Http 请求
 
-## 引言和回顾
+## 引言
 下面我们结合外卖这个 MVP 架构项目来使用 Retrofit 实现登陆请求
+
+
+## 回顾
+
+- 创建Retorfit.Builder对象，通过Builder指定基本配置信息。
+
+- 通过Builder构建Retorfit对象
+
+- 定义 java 接口描述网络请求接口的 API
+
 
 ## 课堂内容
 ### 1. 创建 Retrofit.Builder 对象
