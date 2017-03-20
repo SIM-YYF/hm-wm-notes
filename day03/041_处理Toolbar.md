@@ -99,12 +99,3 @@ public class SellerDetailActivity extends BaseActivity {
 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 ```
 
-## 重点难点讲解
-
-## 问题和练习
-
-### 问题
-
-### 练习
-
-## 拓展和参考资料
