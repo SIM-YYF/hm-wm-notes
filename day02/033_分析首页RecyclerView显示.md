@@ -23,21 +23,21 @@
 可以拆分为 3 种类型的 item
 第一种
 
-![](img/home012.png )
+![](img/home012.png)
 
 第二种商家
 
-![](img/home013.png )
+![](img/home013.png)
 
 第三种分割线
 
-![](img/home014.png )
+![](img/home014.png)
 
 ### 2. 分析 RecyclerView item 排布规律
 
 RecyclerView 中的数据
 
-![](img/takeout001.png )
+![](img/takeout001.png)
 
 - position 为 0  是一种 item
 - position为其他值，type 为 0 是第二种 item
@@ -45,10 +45,7 @@ RecyclerView 中的数据
 
 ## 重点难点讲解
 
-## 问题和练习
-### 问题
+## 问题
 getItemViewType 方法返回值如何取值？
 
-### 练习
 
-## 拓展和参考资料
