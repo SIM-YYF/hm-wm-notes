@@ -12,32 +12,27 @@
 
 ## 课堂内容
 ### 1. SelectorChapek for Android 插件的安装
-![](img/home004.png )
+![](img/home004.png)
 
-![](img/home005.png )
+![](img/home005.png)
 
 ### 2. 使用 SelectorChapek for Android 的图片命名规则
-![](img/home006.png )
+![](img/home006.png)
 
 ### 3. 使用 SelectorChapek for Android
 3.1. 右键单击 drawable 目录
 
-![](img/home007.png )
+![](img/home007.png)
 
 3.2. 点击 generate android selectors
 
-![](img/home008.png )
+![](img/home008.png)
 
 3.3. 在drawable目录下就可以看到自动产生的selector文件了
 
-![](img/home009.png )
+![](img/home009.png)
 
-## 重点难点讲解
-
-## 问题和练习
-### 问题
 
 ### 练习
 1. 安装和使用 SelectorChapek for Android 产生 selector
 
-## 拓展和参考资料
